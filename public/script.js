@@ -121,5 +121,5 @@ changeUsernameButton.addEventListener("click", () => {
         newUsername = prompt("Please enter your new username:");
     } while (!newUsername);
     socket.emit("user change", newUsername); // Assuming your backend handles this event
-    username = newUsername;
+    
 });
