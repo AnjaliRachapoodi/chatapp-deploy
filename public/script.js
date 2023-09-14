@@ -112,14 +112,4 @@ socket.on("chat message", (msg) => {
     appendChatMessage(newMessageDiv);
 });
 
-// New Button to change username
-const changeUsernameButton = document.getElementById("changeUsernameButton");
 
-changeUsernameButton.addEventListener("click", () => {
-    let newUsername;
-    do {
-        newUsername = prompt("Please enter your new username:");
-    } while (!newUsername);
-    socket.emit("user change", newUsername); // Assuming your backend handles this event
-    
-});
